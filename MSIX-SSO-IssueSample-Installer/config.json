@@ -1,0 +1,31 @@
+{
+  "applications": [
+    {
+      "id": "PSFLAUNCHERSixFour",
+      "executable": "MSIX-SSO-IssueSample\\MSIX-SSO-IssueSample.exe",
+      "arguments": "/AddedArg",
+      "workingDirectory": "",
+      "monitor": {
+        "executable": "PsfMonitor.exe",
+        "arguments": "",
+        "asadmin": true
+      }
+    }
+  ],
+  "processes": [
+    {
+      "executable": "MSIX-SSO-IssueSample\\MSIX-SSO-IssueSample.exe",
+      "fixups": [
+        {
+          "dll": "TraceFixup32.dll",
+          "config": {
+            "traceMethod": "eventlog",
+            "traceLevels": {
+              "default": "always"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
