@@ -25,6 +25,8 @@ Login forms are the same.
 Actual results:
 Login forms are the different as below:
 
+![MSAL Login](https://www.iheartux.xyz/scratch/msalissue.png).
+
 
 
 
